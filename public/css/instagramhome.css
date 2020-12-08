@@ -1,0 +1,502 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #e2e2e2;
+    position: relative;
+}
+
+
+.header{
+    height: 60px;
+    background-color: #f9fff8;
+    border-bottom: 1px solid #a5a5a5;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* .header h1{
+    font-size: 20px;
+    padding: 15px 200px;
+    color:  #f8fff9;
+} */
+
+.header .inputsearch{
+    border: none;
+    margin: 10px 0;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.header .logo{
+    padding: 5px 200px;
+}
+
+.header .instagram-logo{
+    width: 140px;
+    height: 50px;
+}
+
+.header .icon{
+    width: 50px;
+    margin: 5px 0;
+}
+
+.header .home-icon{
+    margin-left: 200px;
+}
+
+.header .dm-icon{
+    margin-left: 20px;
+}
+
+.header .navigate-icon{
+    margin-left: 20px;
+}
+
+.header .heart-icon{
+    margin-left: 20px;
+}
+
+.header .session-icon{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+/* #d30038 */
+.stories{
+    margin: 100px 200px;
+    background-color: #f9fff8;
+    width: 600px;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.stories .story-avatar{
+    border-radius: 50px;
+    border: 2px solid #fff7f9;
+}
+
+.stories .avatar{
+    width: 50px;
+    height: 50px;
+    margin: 10px 10px;
+}
+
+.feed{
+    margin: 40px 200px;
+    background-color: #f9fff8;
+    width: 600px;
+    height: 100%;
+    border-radius: 2px;
+}
+
+
+.feed .feed-avatar{
+    border-radius: 50px;
+}
+
+.feed .avatar{
+    width: 50px;
+    height: 50px;
+    margin: 20px 10px;
+}
+
+.feed .feed-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* border: 1px solid #fff7f9; */
+}
+
+.feed .feed-header a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.feed .feed-header .dots{
+    margin-top: -10px;
+    margin-right: 10px;
+    color: #1a1a1a;
+}
+
+.feed-content{
+    width: 600px;
+    height: 450px;
+}
+
+.feed-content img{
+    width: 100%;
+    height: 100%;
+}
+
+.feed-details .icon{
+    width: 50px;
+    margin: 5px 0;
+}
+
+.feed-details .save-icon{
+    width: 30px;
+    margin: 5px 0;
+}
+
+.feed-details .comment-icon{
+    width: 62px;
+    margin: 5px 0;
+}
+
+.feed-details .icons-detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.feed-details .likes{
+    padding: 0px 30px;
+    font-size: 18px;
+    color: #1a1a1a;
+}
+
+.feed-details .desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+.feed-details .desc h5{
+    margin-right: 10px;
+}
+
+.feed-details .desc p{
+    margin-right: auto;
+    margin-top: 11px;
+}
+
+.feed-details .user-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.feed-details .user-desc h5{
+    margin-right: 10px;
+}
+
+.feed-details .user-desc p{
+    margin-right: auto;
+    margin-top: 11px;
+}
+
+.feed-details .input-comment{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feed-details input{
+    padding: 13px 150px;
+    border: none;
+    background: none;
+    color: #1a1a1a;
+}
+
+::placeholder {
+    color: #1a1a1a;
+    opacity: 1; /* Firefox */
+    letter-spacing: 1px;
+    font-size: 18px; 
+}
+
+.feed-details .inp-sub{
+    padding: 12px 30px;
+    border: none;
+    background: #111;
+    color: #deffe2;
+    margin-left: 10px;
+}
+
+.right-part{
+    width: 400px;
+    height: 450px;
+    background-color: #edffee00;
+    position: fixed;
+    right: 20px;
+    top: 100px;
+    border-radius: 5px;
+    /* z-index:-1; */
+}
+
+.right-part .short-avatar{
+    border-radius: 50px;
+}
+
+.right-part .avatar{
+    width: 70px;
+    height: 70px;
+    margin: 20px 20px;
+}
+
+.profile-short{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.profile-short .usr-nam{
+    margin-top: 10px;
+}
+
+.profile-short a{
+    text-decoration: none;
+    color: #0069f3;
+    
+}
+.profile-short .tog{
+    color: #0069f3;
+    margin-left: auto;
+    padding-right: 20px;
+    margin-left: 70px;
+}
+
+.suggest h5{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.suggest .sug-h5{
+    margin-left: 70px;
+    font-size: 16px;
+}
+
+
+.suggest .avatar{
+    width: 50px;
+    height: 50px;
+    margin: 20px 20px;
+}
+
+.suggest .profile-short .usr-nam h5{
+    font-size: 16px;
+    margin-left: -20px;
+}
+
+.suggest .profile-short .tog{
+    font-size: 16px;
+}
+
+/* PROFILE CSS*/
+
+.profile-details{
+    width: 700px;
+    height: 300px;
+    /* border: 1px solid white; */
+    margin: 80px auto;
+   
+}
+
+.profile-details .profile-df-det-details{
+    padding: 0px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile-details .profile-pic{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 40px;
+    margin-top: 100px;
+}
+
+.profile-details .profile-det-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-details .profile-det-details h5{
+    color: #1a1a1a;
+    margin-right: 20px;
+}
+
+.profile-details .profile-det-details .edit-profile{
+    padding: 5px 10px;
+    color: #1a1a1a;
+    background-color: #e8e8e8;
+    border: none;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.profile-details .profile-det-details .fa-cog{
+    font-size: 34px;
+    color: #1a1a1a;
+}
+
+
+.profile-details .account-details{
+    margin-top: -80px;
+    margin-left: 210px;
+    display: flex;
+    align-items: center;
+    color: #1a1a1a;
+}
+
+.profile-details .account-details h5{
+    font-size: 16px;
+    margin-right: 10px;
+    padding-right: 25px;
+}
+
+.profile-details .account-bio{
+    color: #1a1a1a;
+    margin-top: 20px;
+    margin-left: 210px;
+}
+
+.profile-details .account-bio h5{
+    font-size: 16px;
+}
+
+.profile-details .account-bio p{
+    font-size: 14px;
+}
+
+.details-profile{
+    width: 1100px;
+    height: 100%;
+    /* border: 1px solid white; */
+    margin: 50px auto;
+}
+
+.details-profile .nav-keys{
+    padding-left: 250px;
+    border-top: 1px solid #1a1a1a;
+    width: 100%;
+}
+
+.details-profile .nav-keys a{
+    padding: 5px 20px;
+    font-size: 20px;
+    color: #1a1a1a;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* border: 1px solid red; */
+}
+
+.details-profile .nav-keys a:hover{
+    border-top: 5px solid #1a1a1a;
+}
+
+.details-profile .nav-keys i{
+    padding-right: 5px;
+}
+
+/* .details-profile .post-page{
+    
+} */
+
+.details-profile .post-img-page{
+    width: 350px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.details-profile .post-page .post-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.igtv{
+    margin-top: 100px;
+    /* border: 1px solid #deffe2; */
+    margin-bottom: 10px;
+}
+
+.igtv a{
+    color: #1a1a1a;
+    font-size: 45px;
+    /* border: 1px solid #deffe2; */
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 450px;
+}
+
+.igtv h4{
+    color: #1a1a1a;
+    margin: 50px 400px;
+}
+
+.igtv p{
+    color: #1a1a1a;
+    margin: 50px 340px;
+}
+
+.igtv .add-igtv{
+    padding: 5px 10px;
+    color: #deffe2;
+    background-color: #006eff;
+    border: none;
+    margin-left: 420px;
+}
+
+/* ADD POSTS */
+
+.add-post-button{
+    margin-top: 500px;
+    padding: 5px 50px;
+    background-color: #006eff;
+    color: #deffe2;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.add-post-button:hover{
+    background-color: #deffe2;
+    color: #006eff;
+}
+
+.add-post{
+    border:1px solid white;
+    margin: 200px 70px;
+    padding: 0 400px;
+}
+
+.add-post form .pic-choose{
+    color:white;
+    background-color:#006eff;
+    padding:20px 100px;
+    cursor:pointer;
+}
+
+.add-post .input-desc{
+    padding:10px 72px;
+    border: none;
+    color: #111;
+}
+
+.add-post .pub-validate{
+    border: none;
+    padding: 10px 127px;
+    color: #111;
+    background-color: #006eff;
+}
+
